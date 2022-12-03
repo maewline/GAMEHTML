@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <style>
+        body {
+            background-image: url('./img/ทาโร่ผจญภัย.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        h1 {
+            color: white;
+            font-size: 300px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: blue;
+
+        }
+
+        span.alphaLeft {
+            position: absolute;
+            top: 520px;
+            left: 400px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.alphaRight {
+            position: absolute;
+            top: 525px;
+            left: 600px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.taro {
+            position: absolute;
+            top: 680px;
+            left: 450px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.fox {
+            position: absolute;
+            top: 400px;
+            left: 1300px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.audio {
+            position: absolute;
+            top: 850px;
+            left: 1500px;
+            /* border: 3px solid #73AD21; */
+        }
+    </style>
+    <title>ท่าโร่ผจญภัย</title>
+</head>
+
+<body>
+    <script>
+        function loadCorrect() {
+            window.open("Correct.html", "_self");
+            window.close("SelectAns4.html"); //shutdown yourself
+            sessionStorage.setItem("nextPage", "SelectAns5.html"); //next page
+        }
+    </script>
+    <span class="alphaLeft">
+        <!-- <input onclick="location.href='Correct.html';" type="image" src="./img/PicA.png" width="130px" height="120px" /> -->
+        <input onclick="loadCorrect()" type="image" src="./img/PicO.png" width="130px" height="120px" />
+
+    </span>
+
+    <span class="alphaRight">
+        <input onclick="location.href='Wrong.html';" type="image" src="./img/PicY.png" width="125px" height="115px" />
+    </span>
+
+    <span class="taro">
+        <img id="taroPosition" src="./img/taro2.png" width="120px" height="220px">
+
+    </span>
+
+    <span class="fox">
+        <img id="foxPosition" src="./img/fox.png" width="500px" height="500px">
+
+    </span>
+    <span class="audio">
+        <audio controls src="./sound/O.mp3">
+        </audio>
+    </span>
+
+
+
+
+</body>
+
+</html>

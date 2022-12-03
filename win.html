@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <style>
+        body {
+            background-image: url('./img/ทาโร่ผจญภัย.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+
+        #Win {
+            color: white;
+            font-size: 150px;
+            text-shadow: 7px 7px #898989;
+        }
+
+        #restartText {
+            color: white;
+            font-size: 60px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: blue;
+
+        }
+
+        span.Win {
+            position: absolute;
+            left: 620px;
+            top: 50px;
+        }
+
+        span.restart {
+            position: absolute;
+            top: 780px;
+            left: 850px;
+        }
+
+
+        span.taro {
+            position: absolute;
+            top: 380px;
+            left: 800px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.audio {
+            position: absolute;
+            top: 650px;
+            left: 1200px;
+            /* border: 3px solid #73AD21; */
+        }
+    </style>
+    <title>ท่าโร่ผจญภัย</title>
+</head>
+
+<body>
+
+
+    <span class="Win">
+        <h1 id="Win">You Win!!</h1>
+    </span>
+
+    <span class="taro">
+        <img src="./img/happy.png" width="270px" height="370px">
+    </span>
+
+
+
+    <span class="restart">
+        <a href="index.html">
+            <h1 id="restartText">เริ่มใหม่</h1>
+        </a>
+    </span>
+    <audio src="./sound/Clapping.mp3" autoplay="autoplay"></audio>
+
+
+
+
+</body>
+
+</html>

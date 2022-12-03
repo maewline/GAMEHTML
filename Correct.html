@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <script>
+        function shutdown() {
+            var nextPage = sessionStorage.getItem("nextPage"); //args nextPage
+            window.open(nextPage, "_self"); // open nextPage
+            window.close("Correct.html"); // shutdown yourself
+        }
+        function initial() {
+            setTimeout(shutdown, 3000); // sleep 2 second
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('./img/ทาโร่ผจญภัย.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: blue;
+
+        }
+
+        span.status {
+            position: absolute;
+            top: 470px;
+            left: 465px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.taro {
+            position: absolute;
+            top: 620px;
+            left: 450px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.fox {
+            position: absolute;
+            top: 400px;
+            left: 1300px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        span.audio {
+            position: absolute;
+            top: 650px;
+            left: 1200px;
+            /* border: 3px solid #73AD21; */
+        }
+
+        #Correct {
+            color: white;
+            font-size: 150px;
+            text-shadow: 7px 7px #898989;
+        }
+
+        span.Correct {
+            position: absolute;
+            left: 700px;
+            top: 50px;
+        }
+    </style>
+    <title>ท่าโร่ผจญภัย</title>
+</head>
+
+<body onload="initial()">
+
+    <span class="Correct">
+        <h1 id="Correct">Correct</h1>
+    </span>
+
+    <span class="status">
+        <input onclick="location.href='Correct.html';" type="image" src="./img/statusSmile.png" width="130px"
+            height="120px" />
+
+    </span>
+
+    <span class="taro">
+        <img id="taroPosition" src="./img/happy.png" width="150px" height="250px">
+
+    </span>
+
+    <span class="fox">
+        <img id="foxPosition" src="./img/winFox.png" width="500px" height="500px">
+
+    </span>
+    <audio src="./sound/win.mp3" autoplay="autoplay"></audio>
+</body>
+
+</html>
