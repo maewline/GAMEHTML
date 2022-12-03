@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <script>
@@ -10,6 +9,7 @@
             window.close("Correct.html"); // shutdown yourself
         }
         function initial() {
+            // document.getElementById("sound").play();
             setTimeout(shutdown, 3000); // sleep 2 second
         }
     </script>
@@ -85,7 +85,7 @@
     </span>
 
     <span class="status">
-        <input onclick="location.href='Correct.html';" type="image" src="./img/statusSmile.png" width="130px"
+        <input  type="image" src="./img/statusSmile.png" width="130px"
             height="120px" />
 
     </span>
@@ -99,7 +99,7 @@
         <img id="foxPosition" src="./img/winFox.png" width="500px" height="500px">
 
     </span>
-    <audio src="./sound/win.mp3" autoplay="autoplay"></audio>
+    <audio id="sound" src="./sound/win.mp3" autoplay="autoplay"></audio>
 </body>
 
 </html>

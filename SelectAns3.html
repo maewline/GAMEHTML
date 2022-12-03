@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
     <style>
@@ -36,7 +35,6 @@
             left: 400px;
             /* border: 3px solid #73AD21; */
         }
-
         span.alphaRight {
             position: absolute;
             top: 525px;
@@ -69,21 +67,21 @@
 </head>
 
 <body>
-    <script>
+    <script >       
         function loadCorrect() {
-            window.open("Correct.html", "_self");
+            window.open("Correct.html","_self");
             window.close("SelectAns3.html"); //shutdown yourself
-            sessionStorage.setItem("nextPage", "SelectAns4.html"); //next page
+            sessionStorage.setItem("nextPage","SelectAns4.html"); //next page
         }
     </script>
     <span class="alphaLeft">
         <!-- <input onclick="location.href='Correct.html';" type="image" src="./img/PicA.png" width="130px" height="120px" /> -->
-        <input onclick="location.href='Wrong.html';" type="image" src="./img/PicE.png" width="130px" height="120px" />
-
+        <input onclick="location.href='Wrong.html';" type="image" src="./img/PicE.png" width="130px" height="120px"/>
+      
     </span>
 
     <span class="alphaRight">
-        <input onclick="loadCorrect()" type="image" src="./img/PicZ.png" width="125px" height="115px" />
+        <input onclick="loadCorrect()" type="image" src="./img/PicZ.png" width="125px" height="115px"  />
     </span>
 
     <span class="taro">
